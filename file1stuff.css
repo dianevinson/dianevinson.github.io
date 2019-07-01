@@ -1,3 +1,7 @@
+body {
+  background: rgba(0, 100, 170, .3);
+}
 h1 {
   border: 10px dashed blue;
 }
+
