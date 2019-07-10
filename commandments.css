@@ -1,3 +1,9 @@
+body {
+  text-align: center;
+}
 li>.pretty {
   color: pink;
-  }
+  letter-spacing: -1px;
+}
+
+
