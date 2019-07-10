@@ -2,8 +2,11 @@ body {
   text-align: center;
 }
 li>.pretty {
-  color: pink;
+  color: blue;
   letter-spacing: -1px;
+}
+li:nth-child(1) {
+ color: green;  
 }
 
 
