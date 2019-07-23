@@ -118,6 +118,10 @@ li>.gross {
   border-radius: 15%;
   font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace; 
 }
+.fancy {
+  font-family: "URW Chancery L", cursive;
+  color: brown;
+}
 
 #jaywalk {
   background: url(https://ak0.picdn.net/shutterstock/videos/10516220/thumb/1.jpg);
