@@ -43,7 +43,7 @@ li:nth-child(6) {
   max-width: 70%;
   margin: auto;
   font-size: 120%;
-  font-family: "Bradley Hand";
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace; 
 }
 
 li:nth-child(5) span {
