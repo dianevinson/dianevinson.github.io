@@ -6,7 +6,6 @@ url("./Oldeengl.woff") format("woff"),
 url("./Oldeengl.otf") format("opentype"),
 url("./Oldeengl.svg#filename") format("svg");
 }
-
 body {
   background-color: linen;
   text-align: center;
@@ -52,7 +51,10 @@ li:nth-child(6) {
   max-width: 70%;
   margin: auto;
   font-size: 120%;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif; 
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+li:nth-child(7) {
+  letter-spacing: 3px;
 }
 
 li:nth-child(5) span {
@@ -79,6 +81,16 @@ li:nth-child(6) span:first-child {
 }
 li:nth-child(6) span:nth-child(3) {
   color: mediumVioletRed;
+}
+li:nth-child(7) span{
+  display: block;
+  color: blue;
+  font-family: Verdana, Geneva, sans-serif;
+}
+li:nth-child(7) span:nth-child(3) {
+  text-transform: uppercase;
+  font-size: 75%;
+  letter-spacing: 1px;
 }
 
 
@@ -121,15 +133,21 @@ li>.gross {
 .alarm {
   color: red;
   font-size: 110%;
-  border: 5px solid black;
+  border: 8px solid #272727;
   text-shadow: 0px 0px;
   padding: .3em;
   border-radius: 15%;
-  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace; 
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  background-color: #F6F6F6;
+  box-shadow: inset -10px -10px 15px gray;
 }
-.fancy {
+li:nth-child(7) span.fancy{
+  color: #4D1910;
+  font-size: 160%;
   font-family: "Olde English";
-  color: brown;
+}
+.red {
+  color: red;
 }
 
 #jaywalk {
