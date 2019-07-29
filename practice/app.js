@@ -25,12 +25,6 @@ function renderFriend(doc) {
                 db.collection('friends').doc(id).delete();
         })
 }
-//getting data
-db.collection('friends').get().then((snapshot) => {
-        snapshot.docs.forEach( doc => {
-                renderFriend(doc)
-        })
-})
 //saving data 
 form.addEventListener('submit', (ev) => {
         ev.preventDefault();
