@@ -1,5 +1,5 @@
 const friendList = document.querySelector("#friend-list");
-const form = document.querySelector("#friend-add-form");
+const form = document.querySelector("#add-friend-form");
 //create element and render cafe
 function renderFriend(doc) {
         let li = document.createElement('li');
