@@ -12,6 +12,16 @@
         <h1>List of friends</h1>
         <div id="friendList">
         </div>
+        <script>
+            // Initialize Cloud Firestore through Firebase
+firebase.initializeApp({
+  apiKey: 'AIzaSyAv9PBlsB68imhqyvec2Cg8nR0HPytrTy0',
+  authDomain: 'practice-proj-88203.firebaseapp.com',
+  projectId: 'practice-proj-88203'
+});
+
+var db = firebase.firestore();
+        </script>
         <script src="app.js">
         </script>
     </body>
