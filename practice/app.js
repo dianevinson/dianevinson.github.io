@@ -5,15 +5,25 @@ function renderFriend(doc) {
         let li = document.createElement('li');
         let name = document.createElement('span');
         let relationship = document.createElement('span');
+        let cross = document.createElement('div');
         
         li.setAttribute('data-id', doc.id);
         name.textContent = doc.data().name;
         relationship.textContent = doc.data().relationship
+        cross.textContent = ' x';
         
         li.appendChild(name);
         li.appendChild(relationship);
+        li.appendChild(cross);
         
         friendList.appendChild(li);
+        
+        //deleting data
+        cross.addEventListener('click', (ev) => {
+                ev.stopPropagation();
+                let id = e.target.parentElement.getAttribute('data-id');
+                db.collection('friends').doc(id).delete();
+        })
 }
 //getting data
 db.collection('friends').get().then((snapshot) => {
