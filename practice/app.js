@@ -9,3 +9,8 @@ db.collection("friends").add({
 .catch(function(error) {
     console.error("Error adding document: ", error);
 });
+db.collection("friends").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data()}`);
+    });
+});
