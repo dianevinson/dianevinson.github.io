@@ -3,6 +3,6 @@ body {
     background-color: lightPink;
 }
 h1 {
-    display: block;
-    margin: auto;
+    display:inline-block;
+    text-align: center;
 }
