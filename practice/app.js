@@ -41,3 +41,16 @@ form.addEventListener('submit', (ev) => {
         form.name.value = '';
         form.relationship.value = '';
 })
+
+//real time listener 
+db.collections('friends').orderBy('name').onSnapshot(snapshot => {
+        let changes = snapshot.docChanges();
+        changes.forEach(change => {
+                if (change.type == 'added') {
+                        renderFriend(change.doc)
+                } else if (change.type == 'removed') {
+                        let li = friendList.querySelector('[data-id=' + change.doc.id + ']');
+                        friendList.removeChild(li);
+                }
+        })
+})
