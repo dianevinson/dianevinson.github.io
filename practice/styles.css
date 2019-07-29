@@ -1,8 +1,17 @@
-
 body {
     background-color: lightPink;
+    margin: auto;
 }
 h1 {
-    display:inline-block;
+    display: block;
+    margin: auto;
     text-align: center;
+}
+.content {
+  display: block;
+  text-align: center;
+}
+
+li {
+  color: blue;
 }
