@@ -28,4 +28,6 @@ form.addEventListener('submit', (ev) => {
                 name: form.name.value,
                 relationship: form.relationship.value
         });
+        form.name.value = '';
+        form.relationship.value = '';
 })
