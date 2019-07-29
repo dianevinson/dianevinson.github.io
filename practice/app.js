@@ -1,4 +1,5 @@
 const friendList = document.querySelector("#friend-list");
+const form = document.querySelector("#friend-add-form");
 //create element and render cafe
 function renderFriend(doc) {
         let li = document.createElement('li');
@@ -14,9 +15,17 @@ function renderFriend(doc) {
         
         friendList.appendChild(li);
 }
-
+//getting data
 db.collection('friends').get().then((snapshot) => {
         snapshot.docs.forEach( doc => {
                 renderFriend(doc)
         })
+})
+//saving data 
+form.addEventListener('submit', (ev) => {
+        ev.preventDefault();
+        db.collection('friends').add({
+                name: form.name.value,
+                relationship: form.relationship.value
+        });
 })
