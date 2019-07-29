@@ -1,6 +1,9 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+                    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+
     </head>
     <body>
 
@@ -14,9 +17,7 @@
 
         </div>
 
-        <script src="app.js"></script>
-            <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+        
 
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -34,6 +35,9 @@
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+        db.settings({timestampsInSnapshots: true});
     </script>
+        <script src="app.js"></script>
     </body>
 </html>
