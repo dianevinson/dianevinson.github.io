@@ -43,7 +43,7 @@ form.addEventListener('submit', (ev) => {
 })
 
 //real time listener 
-db.collections('friends').orderBy('name').onSnapshot(snapshot => {
+db.collection('friends').orderBy('name').onSnapshot(snapshot => {
         let changes = snapshot.docChanges();
         changes.forEach(change => {
                 if (change.type == 'added') {
