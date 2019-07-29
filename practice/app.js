@@ -26,3 +26,7 @@ db.collection("friends").add({
 .catch(function(error) {
     console.error("Error adding document: ", error);
 });
+
+db.collection('friends').get().then((snapshot) => {
+        console.log(snapshot.docs);
+})
