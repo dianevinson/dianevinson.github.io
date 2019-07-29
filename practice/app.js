@@ -7,7 +7,7 @@ var firebaseConfig = {
         messagingSenderId: "102580477557",
         appId: "1:102580477557:web:cb01afadbdb8d465"
       };
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 db.collection("friends").add({
     name: "Jordan",
     relationship: "friend",
