@@ -7,6 +7,4 @@ var firebaseConfig = {
         messagingSenderId: "102580477557",
         appId: "1:102580477557:web:cb01afadbdb8d465"
       };
-db.collection('friends').get().then((snapshot) => {
-        console.log(snapshot.docs);
-})
+
