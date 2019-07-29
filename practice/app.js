@@ -21,7 +21,7 @@ function renderFriend(doc) {
         //deleting data
         cross.addEventListener('click', (ev) => {
                 ev.stopPropagation();
-                let id = e.target.parentElement.getAttribute('data-id');
+                let id = ev.target.parentElement.getAttribute('data-id');
                 db.collection('friends').doc(id).delete();
         })
 }
