@@ -1,176 +1,304 @@
 @font-face {
-font-family: "Olde English";
-src: url("./Oldeengl.eot");
-src: 
-url("./Oldeengl.woff") format("woff"),
-url("./Oldeengl.otf") format("opentype"),
-url("./Oldeengl.svg#filename") format("svg");
-}
-body {
-  background-color: linen;
-  text-align: center;
-}
-ol {
-  display: inline-block;
-  list-style-position: inside;
-  font-size: 2.1em;
-  display: inline-block;
-}
-li {
-  padding: .5em;
-}
-li:nth-child(1) {
- color: green; 
-  font-variant: small-caps;
-}
-li:nth-child(2) {
-  color: red;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-li:nth-child(3) {
-  padding-top: 1.25em;
-  color: cyan;
-  text-shadow: 3px 3px 8px mediumBlue, -3px -3px 8px mediumBlue;
-  font-family: "Comic Sans MS";
-  font-size: 1.5em;
-}
-li:nth-child(4) {
-  color: red;
-  text-transform: uppercase;
-  font-size: 1.2em;
-}
-li:nth-child(5) {
-  color: yellow;
-  font-family: sans-serif;
-  font-weight: 100;
-  font-size: 110%;
-}
-li:nth-child(6) {
-  color: orange;
-  max-width: 70%;
-  margin: auto;
-  font-size: 120%;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-}
-li:nth-child(7) {
-  letter-spacing: 3px;
-}
-
-li:nth-child(5) span {
-  color: green;
-  display: inline-block;
-  max-width: 35%;
-  text-transform: uppercase; 
-}
-
-li:nth-child(5) acro {
-  color: mediumvioletred;
-  font-size: 110%;
-}
-li:nth-child(6) span {
-  display: inline-block;
-  padding: .2em;
-}
-li:nth-child(6) span:first-child {
-  color: white;
-  font-family: impact;
-  text-transform: uppercase;
-  text-shadow: -1px 5px 0px #0B21E1, -6px 5px 0px #32D3F2;
-  font-size: 150%;
-}
-li:nth-child(6) span:nth-child(3) {
-  color: mediumVioletRed;
-}
-li:nth-child(7) span{
-  display: block;
-  color: blue;
-  font-family: Verdana, Geneva, sans-serif;
-}
-li:nth-child(7) span:nth-child(3) {
-  text-transform: uppercase;
-  font-size: 75%;
-  letter-spacing: 1px;
-}
-
-
-li>.pretty {
-  color: mediumVioletRed;
-  letter-spacing: -4px;
-  font-style: italic;
-  font-variant: normal;
-  font-size: 2.15em;
-}
-li>.gross {
-  color: darkGreen;
-  text-shadow: 0px 7px 2px lime;
-  font-size: 175%;
-  font-style: italic;
-  text-transform: lowercase;
-}
-
-.time {
-  display: inline-block;
-  padding: 1.5em;
-  padding-bottom: .5em;
-  padding-top:.5em;
-  width: 250px;
-  height:10px;
-  color: #FDCBED;
-  text-shadow: 3px 3px 8px mediumVioletRed, -3px -3px 8px mediumVioletRed;
-  font-size: 75%;
-}
-.hours {
-  display: inline-block;
-  width: 250px;
-  height:10px;
-  padding: 1.5em;
-  padding-top:.5em;
-  color: #FFD878;
-  text-shadow: 3px 3px 8px #C36904, -3px -3px 8px #C36904;
-  font-size:75%;
-}
-.alarm {
-  color: red;
-  font-size: 110%;
-  border: 8px solid #272727;
-  text-shadow: 0px 0px;
-  padding: .3em;
-  border-radius: 15%;
-  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
-  background-color: #F6F6F6;
-  box-shadow: inset -10px -10px 15px gray;
-}
-li:nth-child(7) span.fancy{
-  color: #4D1910;
-  font-size: 160%;
-  font-family: "Olde English";
-}
-.red {
-  color: red;
-}
-
-#jaywalk {
-  background: url(https://ak0.picdn.net/shutterstock/videos/10516220/thumb/1.jpg);
-  background-size: cover;
-  color: #fff;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-size: 150%;
-  font-family: "Impact";
-
-}
-#mesh {
-   background: url(https://espinozasleather.com/wp-content/uploads/2017/03/liner-mesh-kelly-green.jpg);
-   background-size: cover;
-  color: #fff;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  font-size: 250%;
-  font-family: "Impact";
-}
-
-}
-li>img {
-  width: 20%;
-}
+    font-family: "Olde English";
+    src: url("./Oldeengl.eot");
+    src: 
+    url("./fonts/Oldeengl.woff") format("woff"),
+    url("./fonts/Oldeengl.otf") format("opentype"),
+    url("./fonts/Oldeengl.svg#filename") format("svg");
+    }
+    body {
+      background-color: linen;
+      text-align: center;
+    }
+    ol {
+      display: inline-block;
+      list-style-position: inside;
+      font-size: 2.1em;
+      display: inline-block;
+    }
+    li {
+      padding: .5em;
+      max-width: 100%;
+    }
+    li:nth-child(1) {
+     color: green; 
+      font-variant: small-caps;
+    }
+    li:nth-child(2) {
+      color: red;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+    li:nth-child(3) {
+      padding-top: 1.25em;
+      color: cyan;
+      text-shadow: 3px 3px 8px mediumBlue, -3px -3px 8px mediumBlue;
+      font-family: "Comic Sans MS";
+      font-size: 1.5em;
+    }
+    li:nth-child(4) {
+      color: red;
+      text-transform: uppercase;
+      font-size: 1.2em;
+    }
+    li:nth-child(5) {
+      color: yellow;
+      font-family: sans-serif;
+      font-weight: 100;
+      font-size: 110%;
+    }
+    li:nth-child(6) {
+      color: orange;
+      max-width: 70%;
+      margin: auto;
+      font-size: 120%;
+      font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    }
+    li:nth-child(7) {
+      max-width: 50%;
+      margin: auto;
+      color: green;
+      font-size: 110%
+    }
+    li:nth-child(8) {
+      color:#AB0A47;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-transform: uppercase;
+    }
+    
+    li:nth-child(5) span {
+      color: green;
+      display: inline-block;
+      max-width: 35%;
+      text-transform: uppercase; 
+    }
+    
+    li:nth-child(5) acro {
+      color: mediumvioletred;
+      font-size: 110%;
+    }
+    li:nth-child(6) span {
+      display: inline-block;
+      padding: .2em;
+    }
+    li:nth-child(6) span:first-child {
+      color: white;
+      font-family: impact;
+      text-transform: uppercase;
+      text-shadow: -1px 5px 0px #0B21E1, -6px 5px 0px #32D3F2;
+      font-size: 150%;
+    }
+    li:nth-child(6) span:nth-child(3) {
+      color: mediumVioletRed;
+    }
+    li:nth-child(7) span{
+      display: inline-block;
+      color: #246E14;
+      font-family: Verdana, Geneva, sans-serif;
+    }
+    li:nth-child(7) span:nth-child(3) {
+      text-transform: uppercase;
+      font-size: 75%;
+      letter-spacing: 1px;
+    }
+    li:nth-child(8) span, div {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    li:nth-child(8) div {
+      max-width: 7%;
+    }
+    li:nth-child(9) {
+      color: #3089C8;
+      text-transform: uppercase;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      position: relative;
+      max-width: 75%;
+      left: 9em;
+    } 
+    li:nth-child(10) {
+      color: #642E05;
+      font-size: 75%;
+    }
+    
+    
+    li>.pretty {
+      color: mediumVioletRed;
+      letter-spacing: -4px;
+      font-family: 'Pinyon Script', cursive;
+      font-style: italic;
+      font-variant: normal;
+      font-weight: bold;
+      font-size: 300%;
+    }
+    .gross {
+      color: darkGreen;
+      text-shadow: 0px 7px 2px lime;
+      font-size: 175%;
+      font-style: italic;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-transform: lowercase;
+    }
+    
+    .time {
+      display: inline-block;
+      padding: 1.5em;
+      padding-bottom: .5em;
+      padding-top:.5em;
+      width: 250px;
+      height:10px;
+      color: #FDCBED;
+      text-shadow: 3px 3px 8px mediumVioletRed, -3px -3px 8px mediumVioletRed;
+      font-size: 75%;
+    }
+    .hours {
+      display: inline-block;
+      width: 250px;
+      height:10px;
+      padding: 1.5em;
+      padding-top:.5em;
+      color: #FFD878;
+      text-shadow: 3px 3px 8px #C36904, -3px -3px 8px #C36904;
+      font-size:75%;
+    }
+    .alarm {
+      color: red;
+      font-size: 110%;
+      border: 8px solid #272727;
+      text-shadow: 0px 0px;
+      padding: .3em;
+      border-radius: 15%;
+      font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+      background-color: #F6F6F6;
+      box-shadow: inset -10px -10px 15px gray;
+    }
+    li:nth-child(7) span.fancy{
+      color: #4D1910;
+      font-size: 200%;
+      font-family: "Olde English";
+    }
+    .red {
+      color: red;
+    }
+    .trash {
+      font-size: 250%;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-color: #DAD5D7;
+      background-image:radial-gradient(#46D84C , transparent 20%, #115213 95%), radial-gradient(#462A02, transparent 40%),
+      repeating-linear-gradient(90deg, #DAD5D7, #DAD5D7 2px, #A19B9D 0, #A19B9D 4px);
+      background-position: 0 0, 50px 50px;
+      background-size: 50px 50px;
+      font-weight: 900;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .bubble {
+      color: #F99300;
+      text-shadow: 0px 0px 4px #D56E02;
+      font-family: cursive;
+      font-size: 300%;
+      font-weight: bold;
+      font-stretch: ultra-condensed;
+    }
+    .doNOT {
+      color: red;
+      font-size: 300%;
+    }
+    .rug {
+      height: 30px;
+      width: 250px;
+      -webkit-background-clip: content-box;
+      color: transparent;
+      background-color: #32D3F2;
+      background-image: repeating-linear-gradient(0deg, #32D3F2,  #32D3F2 2px, #F995F7 0, #F995F7 4px);
+      position: absolute;
+      top: 40px;
+      left: -10px;
+      z-index: -1;
+    }
+    .wet {
+      font-family: 'Pinyon Script', cursive;
+      color: #0A1FDA;
+      font-weight: bold;
+      font-size: 400%;
+      border: 1px solid red;
+      text-shadow:0px 2px 4px #137AD8;
+      position: relative;
+    }
+    .dead {
+      color: red;
+      font-family: 'Kumar One Outline', cursive;
+      font-stretch: ultra-condensed;
+      font-weight: bold;
+      font-size: 250%;
+      letter-spacing: -1px;
+    }
+    .tear {
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 20px solid #137AD8;
+      border-radius: 50%;
+      position: absolute;
+      left: .5em;
+      top:100px;
+      margin-left: 1em;
+    } 
+    .tear:nth-child(2) {
+      left: 1em;
+    }
+    .tear:nth-child(3) {
+      left: 0em;
+    }
+    
+    #jaywalk {
+      background: url(https://ak0.picdn.net/shutterstock/videos/10516220/thumb/1.jpg);
+      background-size: cover;
+      color: #fff;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      font-size: 150%;
+      font-family: "Impact";
+    
+    }
+    #mesh {
+       background: url(https://espinozasleather.com/wp-content/uploads/2017/03/liner-mesh-kelly-green.jpg);
+       background-size: cover;
+      color: #fff;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      font-size: 250%;
+      font-family: "Impact";
+    }
+    
+    #rock {
+      color: gray;
+    }
+    #paper {
+      color: #3ABDF3;
+    }
+    #scissors {
+      color: red;
+    }
+    #spill {
+      position: relative;
+      top: -50px;
+      left: 0px;
+    }
+    #onda {
+      position: relative;
+      font-size: 150%;
+      left:-275px;
+      top:10px;
+    }
+    
+    .choice:hover {
+      font-size: 150%;
+      color: #F9F03C !important;
+      text-shadow: 0 0 10px #C5BC08;
+    }
+    
+    li>img {
+      width: 20%;
+    }
